@@ -1,0 +1,46 @@
+{
+  "name": "youtube-react-testing-video9-nextjs-getstaticprops-getstaticpaths-getserversideprops",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint --dir src",
+    "test": "jest",
+    "test:ci": "jest --coverage --silent --ci",
+    "prepare": "husky install",
+    "prettier": "prettier {*,src/*,src/**/*} --write --ignore-unknown",
+    "lint-staged": "lint-staged"
+  },
+  "dependencies": {
+    "next": "11.1.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "8.7.2",
+    "@testing-library/jest-dom": "5.14.1",
+    "@testing-library/react": "12.1.2",
+    "@testing-library/user-event": "13.3.0",
+    "@types/jest": "27.0.2",
+    "@types/react": "17.0.27",
+    "@typescript-eslint/eslint-plugin": "4.33.0",
+    "@typescript-eslint/parser": "4.33.0",
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.2",
+    "eslint-plugin-jest": "25.0.1",
+    "eslint-plugin-react": "7.26.1",
+    "eslint-plugin-testing-library": "4.12.4",
+    "husky": "7.0.2",
+    "jest": "27.2.5",
+    "lint-staged": "11.2.3",
+    "prettier": "2.4.1",
+    "ts-jest": "27.0.5",
+    "typescript": "4.4.3"
+  },
+  "lint-staged": {
+    "*.(tsx|ts)": "eslint --cache --fix",
+    "*": "prettier --write --ignore-unknown"
+  }
+}
